@@ -5,11 +5,12 @@
     font-size: 1.5rem;
     padding: 1rem .5rem;
     transition: all .07s ease;
-    width: 5rem;
+    width: 10rem;
     text-align: center;
     color: rgb(225, 12, 233);
     /* background: rgba(0,0,0,0.4); */
     text-shadow: 0 0 .5rem rgb(228, 222, 222);
+    
 }
 
 .row {
@@ -47,8 +48,5 @@ div.circle-avatar{
     bottom: 0;
     }
     input {
-        color: transparent; 
-        background-color: transparent; 
-        border-color: transparent; 
-        cursor: default;
+        color: transparent; background-color: transparent; border-color: transparent; cursor: default;
     }
