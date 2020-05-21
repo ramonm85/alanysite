@@ -36,18 +36,25 @@
     </div> -->
     <div class="circle-avatar" style="background-image:url(./pictures/alany.jpg)"></div>
     </div>
-    <div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3" onclick="play()" >head shoulder knees and toes
-                    
-    <audio id="audio" src="./sounds/head_shoulder.mp3"></audio>
+    
+        <div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3" onclick="playSound1()" >Baby Shark
+                        <!-- <input type="button" onclick="play()"> -->
+        <audio id="audio" src="./sounds/babyshark.mp3"></audio>
+                    </div>
+                    <div class="col-md-3" onclick="playSound2()">Vaca Lola
+                        <audio id="vacalola" src="./sounds/vacalola.mp3"> </audio>
+                    </div>
+                    <div class="col-md-3" onclick="playSound3()">Head Sholders
+                        <audio id="head_shoulder" src="./sounds/head_shoulder.mp3"></audio>
+                    </div>
+                    <div class="col-md-3" onclick="playSound4()">Wheels
+                        <audio id="wheelsonthebus" src="./sounds/wheelsonthebus.mp3"></audio>
+                    </div>
                 </div>
-                <div class="col-md-3">alanys 2 song</div>
-                <div class="col-md-3">alanys 3 song</div>
-                <div class="col-md-3">alanys 4 song</div>
             </div>
-        </div>
     </div>
     <div class="footer-basic">
         <footer>
@@ -63,11 +70,64 @@
         </footer>
     </div>
     <script>
-        function play() {
-        var audio = document.getElementById("audio");
-        audio.play();
+
+var audio1 = document.getElementById('audio');
+var audio2 = document.getElementById('vacalola');
+var audio3 = document.getElementById('head_shoulder');
+var audio4 = document.getElementById('wheelsonthebus');
+
+
+
+function playSound1(){
+        if (audio1.paused) {
+            audio1.play();
+            $('#play').removeClass('glyphicon-play-circle')
+            $('#play').addClass('glyphicon-pause')
+        }else{
+            audio1.pause();
+            audio1.currentTime = 0
+            $('#play').addClass('glyphicon-play-circle')
+            $('#play').removeClass('glyphicon-pause')
         }
-      </script>
+    }
+function playSound2(){
+        if (audio2.paused) {
+            audio2.play();
+            $('#play').removeClass('glyphicon-play-circle')
+            $('#play').addClass('glyphicon-pause')
+        }else{
+            audio2.pause();
+            audio2.currentTime = 0
+            $('#play').addClass('glyphicon-play-circle')
+            $('#play').removeClass('glyphicon-pause')
+        }
+    }
+    function playSound3(){
+        if (audio3.paused) {
+            audio3.play();
+            $('#play').removeClass('glyphicon-play-circle')
+            $('#play').addClass('glyphicon-pause')
+        }else{
+            audio3.pause();
+            audio3.currentTime = 0
+            $('#play').addClass('glyphicon-play-circle')
+            $('#play').removeClass('glyphicon-pause')
+        }
+    }
+    function playSound4(){
+        if (audio4.paused) {
+            audio4.play();
+            $('#play').removeClass('glyphicon-play-circle')
+            $('#play').addClass('glyphicon-pause')
+        }else{
+            audio4.pause();
+            audio4.currentTime = 0
+            $('#play').addClass('glyphicon-play-circle')
+            $('#play').removeClass('glyphicon-pause')
+        }
+    }
+        
+    </script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 
