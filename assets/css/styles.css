@@ -3,7 +3,7 @@
     border-radius: .5rem;
     margin: 1rem;
     font-size: 1.5rem;
-    padding: 1rem .5rem;
+    padding: .5rem .5rem;
     transition: all .07s ease;
     width: 10rem;
     text-align: center;
@@ -16,7 +16,7 @@
 .row {
     display: flex;
     flex: 3;
-    min-height: 3vh;
+    min-height: 5vh;
     align-items: center;
     justify-content: center;
 }
@@ -27,7 +27,7 @@ div.circle-avatar{
     height:auto;
     display:block;
     /* div height to be the same as width*/
-    padding-top:100%;
+    padding-top:30%;
     
     /* make it a circle */
     border-radius:50%;
@@ -38,10 +38,10 @@ div.circle-avatar{
     background-repeat: no-repeat;
     
     /* it makes the clue thing, takes smaller dimension to fill div */
-    background-size: cover;
+    background-size: flex;
     
     /* it is optional, for making this div centered in parent*/
-    margin: 0 auto;
+    margin: 0;
     top: 0;
     left: 0;
     right: 0;
